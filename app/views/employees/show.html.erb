@@ -1,0 +1,22 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Desigination</th>
+    <th>DateOfJoining</th>
+    <th>Age</th>
+  </tr>
+
+    <tr>
+      <td><%= @employee.name %></td>
+      <td><%= @employee.desigination %></td>
+      <td><%= @employee.date_of_joining %></td>
+      <td><%= @employee.age %></td>
+    </tr>
+</table>
+
+<h1>Skills</h1>
+<ol>
+  <% @employee.skills.each do |x|%>
+  <li><%= x.name %></li>
+  <% end %>
+</ol>

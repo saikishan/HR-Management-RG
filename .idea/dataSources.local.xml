@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails HR-management-console: test" uuid="89b36258-74e7-45d2-a776-eafc8b7174dc">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <user-name>hr_appserver</user-name>
+    </data-source>
+    <data-source name="Rails HR-management-console: default" uuid="9988ef37-9802-443f-8cb2-dfe5136afc29">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <user-name>hr_appserver</user-name>
+    </data-source>
+    <data-source name="Rails HR-management-console: development" uuid="c3de3468-68fd-4818-8289-2375d75ed23e">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <user-name>hr_appserver</user-name>
+    </data-source>
+    <data-source name="Rails HR-management-console: production" uuid="8c50b473-08ea-48b6-9b2c-645b25857ecd">
+      <database-info product="PostgreSQL" version="10.6" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2" dbms="POSTGRES" exact-version="10.6">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>hr_appserver</user-name>
+      <introspection-schemas>@:@</introspection-schemas>
+    </data-source>
+  </component>
+</project>

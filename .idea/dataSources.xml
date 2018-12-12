@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Rails HR-management-console: test" uuid="89b36258-74e7-45d2-a776-eafc8b7174dc">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/hr_management</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails HR-management-console: default" uuid="9988ef37-9802-443f-8cb2-dfe5136afc29">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/hr_management</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails HR-management-console: development" uuid="c3de3468-68fd-4818-8289-2375d75ed23e">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/hr_management</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails HR-management-console: production" uuid="8c50b473-08ea-48b6-9b2c-645b25857ecd">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/hr_management</jdbc-url>
+    </data-source>
+  </component>
+</project>

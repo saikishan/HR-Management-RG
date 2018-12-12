@@ -1,0 +1,25 @@
+<%= form_tag("", method: "post") do %>
+  <p>
+  <%= label_tag(:name, "Name") %>
+  <%= text_field_tag( :employee_name ) %>
+  </p>
+  <%= label_tag( :age , "Age") %>
+  <%= number_field_tag( :employee_age, in: 20..60) %>
+  <p>
+  <%= label_tag(:skill ,"Skill Set") %>
+  <%= collection_check_boxes( :skill, :skill_ids, Skill.all, :id, :name)%>
+  </p>
+  <p>
+  <%= label_tag(:team ,"team selection") %>
+  <%= collection_radio_buttons( :team , :team_id, Team.all, :id, :name)%>
+  </p>
+  <p>
+    <%= label_tag(:team ,"date_of_joining") %>
+    <%= date_field(:joining_date, :date_of_joiing) %>
+  </p>
+  <p>
+    <%= label_tag(:team ,"Desigination") %>
+    <%= select_tag(:desigination,options_for_select(["Dev","TL"],"Dev")) %>
+  </p>
+  <%= submit_tag() %>
+<% end %>

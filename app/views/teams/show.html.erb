@@ -1,0 +1,24 @@
+<h1> <%= @team.name %> </h1>
+
+
+<%# @team.employee.each do |x| %>
+<!--  <h3> <%#= x.name %>      <%#= x.skills.count %>       <%#= x.desigination %> </h3>-->
+<%# end %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Skill count</th>
+    <th role></th>
+  </tr>
+
+  <% @team.employee.each do |x| %>
+    <tr>
+      <td><%= x.name %></td>
+      <td><%= x.name %> </td>
+      <td><%= x.skills.count %></td>
+      <td><%= x.desigination %></td>
+      <td><%= link_to 'Show', employee_path(x) %></td>
+    </tr>
+  <% end %>
+  </table>

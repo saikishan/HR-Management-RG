@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Rails HR-management-console: production">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.14">
+    <root id="1">
+      <ServerVersion>10.6</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="blogger">
+      <ObjectId>17922</ObjectId>
+      <StateNumber>562</StateNumber>
+      <Owner>kishan</Owner>
+    </database>
+    <database id="3" parent="1" name="hr_management">
+      <ObjectId>17968</ObjectId>
+      <StateNumber>575</StateNumber>
+      <Owner>kishan</Owner>
+      <IntrospectionStateNumber>505</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+      <Relations>sequence|table|17986|17988|1
+sequence|table|17997|17999|1
+sequence|table|18024|18026|1
+</Relations>
+    </database>
+    <database id="4" parent="1" name="kishan">
+      <ObjectId>16384</ObjectId>
+      <StateNumber>555</StateNumber>
+      <Owner>kishan</Owner>
+    </database>
+    <database id="5" parent="1" name="postgres">
+      <ObjectId>13291</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <StateNumber>553</StateNumber>
+      <Owner>kishan</Owner>
+    </database>
+    <role id="6" parent="1" name="hr_appserver">
+      <ObjectId>17969</ObjectId>
+      <Inherit>1</Inherit>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="7" parent="1" name="kishan">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <role id="8" parent="1" name="myapp">
+      <ObjectId>17923</ObjectId>
+      <Inherit>1</Inherit>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="9" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="10" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="11" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="12" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="13" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <schema id="14" parent="3" name="information_schema">
+      <ObjectId>13000</ObjectId>
+      <StateNumber>353</StateNumber>
+      <Owner>kishan</Owner>
+    </schema>
+    <schema id="15" parent="3" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+      <StateNumber>350</StateNumber>
+      <Owner>kishan</Owner>
+    </schema>
+    <schema id="16" parent="3" name="pg_temp_1">
+      <ObjectId>11736</ObjectId>
+      <StateNumber>113</StateNumber>
+      <Owner>kishan</Owner>
+    </schema>
+    <schema id="17" parent="3" name="pg_toast">
+      <ObjectId>99</ObjectId>
+      <Comment>reserved schema for TOAST tables</Comment>
+      <StateNumber>1</StateNumber>
+      <Owner>kishan</Owner>
+    </schema>
+    <schema id="18" parent="3" name="pg_toast_temp_1">
+      <ObjectId>11737</ObjectId>
+      <StateNumber>113</StateNumber>
+      <Owner>kishan</Owner>
+    </schema>
+    <schema id="19" parent="3" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <StateNumber>351</StateNumber>
+      <Owner>kishan</Owner>
+      <IntrospectionTimestamp>2018-12-11.16:26:50.508</IntrospectionTimestamp>
+      <IntrospectionStateNumber>583</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <access-method id="20" parent="3" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.bthandler</Handler>
+      <HandlerId>330</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="21" parent="3" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="22" parent="3" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.gisthandler</Handler>
+      <HandlerId>332</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="23" parent="3" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="24" parent="3" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.spghandler</Handler>
+      <HandlerId>334</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="25" parent="3" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <extension id="26" parent="3" name="plpgsql">
+      <ObjectId>13277</ObjectId>
+      <Comment>PL/pgSQL procedural language</Comment>
+      <StateNumber>505</StateNumber>
+      <Version>1.0</Version>
+      <SchemaName>pg_catalog</SchemaName>
+      <SchemaId>11</SchemaId>
+    </extension>
+    <sequence id="27" parent="19" name="employees_id_seq">
+      <ObjectId>18024</ObjectId>
+      <Owner>hr_appserver</Owner>
+      <StateNumber>582</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="28" parent="19" name="skills_id_seq">
+      <ObjectId>17986</ObjectId>
+      <Owner>hr_appserver</Owner>
+      <StateNumber>579</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="29" parent="19" name="teams_id_seq">
+      <ObjectId>17997</ObjectId>
+      <Owner>hr_appserver</Owner>
+      <StateNumber>580</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <table id="30" parent="19" name="ar_internal_metadata">
+      <ObjectId>17978</ObjectId>
+      <Owner>hr_appserver</Owner>
+      <StateNumber>577</StateNumber>
+    </table>
+    <table id="31" parent="19" name="employees">
+      <ObjectId>18026</ObjectId>
+      <Owner>hr_appserver</Owner>
+      <StateNumber>582</StateNumber>
+    </table>
+    <table id="32" parent="19" name="employees_skills">
+      <ObjectId>18041</ObjectId>
+      <Owner>hr_appserver</Owner>
+      <StateNumber>583</StateNumber>
+    </table>
+    <table id="33" parent="19" name="schema_migrations">
+      <ObjectId>17970</ObjectId>
+      <Owner>hr_appserver</Owner>
+      <StateNumber>576</StateNumber>
+    </table>
+    <table id="34" parent="19" name="skills">
+      <ObjectId>17988</ObjectId>
+      <Owner>hr_appserver</Owner>
+      <StateNumber>579</StateNumber>
+    </table>
+    <table id="35" parent="19" name="teams">
+      <ObjectId>17999</ObjectId>
+      <Owner>hr_appserver</Owner>
+      <StateNumber>582</StateNumber>
+    </table>
+    <column id="36" parent="30" name="key">
+      <Position>1</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>577</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="37" parent="30" name="value">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>577</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="38" parent="30" name="created_at">
+      <Position>3</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>577</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="39" parent="30" name="updated_at">
+      <Position>4</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>577</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="40" parent="30" name="ar_internal_metadata_pkey">
+      <ObjectId>17984</ObjectId>
+      <StateNumber>577</StateNumber>
+      <ColNames>key</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="41" parent="30" name="ar_internal_metadata_pkey">
+      <ObjectId>17985</ObjectId>
+      <StateNumber>577</StateNumber>
+      <ColNames>key</ColNames>
+      <UnderlyingIndexName>ar_internal_metadata_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="42" parent="31" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>582</StateNumber>
+      <DefaultExpression>nextval(&apos;employees_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="43" parent="31" name="name">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>582</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="44" parent="31" name="desigination">
+      <Position>3</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>582</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="45" parent="31" name="age">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>582</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="46" parent="31" name="date_of_joining">
+      <Position>5</Position>
+      <DataType>date|0s</DataType>
+      <StateNumber>582</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="47" parent="31" name="team_id">
+      <Position>6</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>582</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="48" parent="31" name="created_at">
+      <Position>7</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>582</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="49" parent="31" name="updated_at">
+      <Position>8</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>582</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="50" parent="31" name="employees_pkey">
+      <ObjectId>18033</ObjectId>
+      <StateNumber>582</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="51" parent="31" name="index_employees_on_team_id">
+      <ObjectId>18040</ObjectId>
+      <StateNumber>582</StateNumber>
+      <ColNames>team_id</ColNames>
+    </index>
+    <key id="52" parent="31" name="employees_pkey">
+      <ObjectId>18034</ObjectId>
+      <StateNumber>582</StateNumber>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>employees_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="53" parent="31" name="fk_rails_397652e89f">
+      <ObjectId>18035</ObjectId>
+      <StateNumber>582</StateNumber>
+      <ColNames>team_id</ColNames>
+      <RefTableId>17999</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>teams</RefTableName>
+      <RefKeyName>teams_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="54" parent="32" name="employee_id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>583</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="55" parent="32" name="skill_id">
+      <Position>2</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>583</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="56" parent="32" name="index_employees_skills_on_employee_id_and_skill_id">
+      <ObjectId>18044</ObjectId>
+      <StateNumber>583</StateNumber>
+      <ColNames>employee_id
+skill_id</ColNames>
+    </index>
+    <column id="57" parent="33" name="version">
+      <Position>1</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>576</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="58" parent="33" name="schema_migrations_pkey">
+      <ObjectId>17976</ObjectId>
+      <StateNumber>576</StateNumber>
+      <ColNames>version</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="59" parent="33" name="schema_migrations_pkey">
+      <ObjectId>17977</ObjectId>
+      <StateNumber>576</StateNumber>
+      <ColNames>version</ColNames>
+      <UnderlyingIndexName>schema_migrations_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="60" parent="34" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>579</StateNumber>
+      <DefaultExpression>nextval(&apos;skills_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="61" parent="34" name="name">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>579</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="62" parent="34" name="created_at">
+      <Position>3</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>579</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="63" parent="34" name="updated_at">
+      <Position>4</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>579</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="64" parent="34" name="skills_pkey">
+      <ObjectId>17995</ObjectId>
+      <StateNumber>579</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="65" parent="34" name="skills_pkey">
+      <ObjectId>17996</ObjectId>
+      <StateNumber>579</StateNumber>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>skills_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="66" parent="35" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <DefaultExpression>nextval(&apos;teams_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="67" parent="35" name="name">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>580</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="68" parent="35" name="created_at">
+      <Position>3</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="69" parent="35" name="updated_at">
+      <Position>4</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="70" parent="35" name="teams_pkey">
+      <ObjectId>18006</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="71" parent="35" name="teams_pkey">
+      <ObjectId>18007</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>teams_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
